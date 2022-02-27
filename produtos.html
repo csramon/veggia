@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>VEGGIA - Point dos naturebas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+
+</head>
+
+<body>
+  <section id="header">
+    <div class="logo-box">
+      <a href="index.html"><img src="img/icon.png" class="logo" alt="logo-img">
+        <a href="index.html">
+          <h1>VEGGIA</h1>
+        </a>
+    </div>
+
+    <div class="">
+      <ul id="navbar">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html" class="active2">Produtos</a></li>
+        <li><a href="aempresa.html">A Empresa</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <!-- <li id="lg-bag"><a href="cart.html"></i></a></li> -->
+        <li> <i class="fas fa-shopping-bag" id="cart-icon2"></i> </li>
+
+        <div class="cart2">
+          <h2 class="cart-title">Carrinho</h2>
+          <div class="cart-content">
+
+          </div>
+          <!-- Total -->
+          <div class="total">
+            <input class="coupon-box" type="text" placeholder="Cupom">
+            <button class="coupon-btn">OK</button>
+            <p class="total-title">Total</p> 
+
+            <p class="total-price">R$0</p>
+          </div>
+          <div class="adress-info">
+            <p>Endereço de Entrega</p>
+            <input type="text" placeholder="Rua, nº da casa/apt" required>
+            <input type="text" placeholder="CEP" required>
+            <input type="text" placeholder="Celular" required>
+          </div>
+          <div class="payment-info">
+            <p>Pagamento</p>
+            <input type="radio" id="money" name="payment_type" value="money" required>
+            <label for="money">Dinheiro</label>
+            <input type="radio" id="credit_card" name="payment_type" value="money" required>
+            <label for="credit_card">Cartão de Crédito</label>
+            <input type="radio" id="pix" name="payment_type" value="money" required>
+            <label for="pix" required>PIX</label>
+
+          </div>
+          <!-- Buy button -->
+          <button type="submit" class="btn-buy">Finalizar Pedido</button>
+
+          <!-- Cart close -->
+          <i class="fas fa-times" id="close-cart2"></i>
+        </div>
+        <a href="#" id="close"><i class="fas fa-times"></i></a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <a><i class="fas fa-shopping-bag" id="cart-icon3"></i></a>
+      <i id="bar" class="fas fa-outdent"></i>
+    </div>
+  </section>
+
+  <!-- Hero Section -->
+  <section id="page-header">
+    <h2>Produtos</h2>
+    <p>APROVEITE: Sobremesas com 30% de desconto</p>
+  </section>
+
+
+  <section class="collapsible-menu">
+    <input type="checkbox" id="menu-trigger1">
+    <label for="menu-trigger1">Marmitas</label>
+    <!-- <div class="menu-content"> -->
+    <div class="menu-content" id="product1" class="section-p1">
+      <div class="pro-container">
+        <div class="pro">
+          <img class="prod-img" src="img/products/food1.jpg" alt="product-img">
+          <div class="des">
+            <span>VEGETARIANO</span>
+            <h5 class="product-title"> Batata francesa c/ acompanhamentos </h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="prod-price"> R$21.99</h4>
+          </div>
+          <i class="fas fa-shopping-cart add-cart"></i>
+        </div>
+
+        <div class="pro">
+          <img class="prod-img" src=" img/products/food2.jpg" alt="product-img">
+          <div class="des">
+            <span>VEGANO</span>
+            <h5 class="product-title"> P.F. Vegano </h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="prod-price"> R$15</h4>
+          </div>
+          <i class="fas fa-shopping-cart add-cart"></i>
+        </div>
+
+        <div class="pro">
+          <img class="prod-img" src=" img/products/food5.jpg" alt="product-img">
+          <div class="des">
+            <span>VEGANO</span>
+            <h5 class="product-title"> Marmita grão de bico </h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="prod-price"> R$12.90</h4>
+          </div>
+          <i class="fas fa-shopping-cart add-cart"></i>
+        </div>
+        <div class="pro">
+          <img class="prod-img" src=" img/products/food6.jpg" alt="product-img">
+          <div class="des">
+            <span>VEGANO</span>
+            <h5 class="product-title"> Arroz belga </h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="prod-price"> R$23.50</h4>
+          </div>
+          <i class="fas fa-shopping-cart add-cart"></i>
+        </div>
+
+
+      </div>
+    </div>
+    <!-- </div> -->
+  </section>
+  <section class="collapsible-menu">
+    <input type="checkbox" id="menu-trigger2">
+    <label for="menu-trigger2">Wraps</label>
+    <div class="menu-content" id="product1" class="section-p1">
+      <div class="pro-container">
+        <div class="pro">
+          <img class="prod-img" src=" img/products/wrap1.jpg" alt="product-img">
+          <div class="des">
+            <span>VEGANO</span>
+            <h5 class="product-title"> Wrap de curry e tofu </h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="prod-price"> R$19.99</h4>
+          </div>
+          <i class="fas fa-shopping-cart add-cart"></i>
+        </div>
+        <div class="pro">
+          <img class="prod-img" src=" img/products/wrap2.jpg" alt="product-img">
+          <div class="des">
+            <span>VEGANO</span>
+            <h5 class="product-title"> Wrap grego </h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="prod-price"> R$12.99</h4>
+          </div>
+          <i class="fas fa-shopping-cart add-cart"></i>
+        </div>
+        <div class="pro">
+          <img class="prod-img" src=" img/products/wrap3.jpg" alt="product-img">
+          <div class="des">
+            <span>VEGANO</span>
+            <h5 class="product-title"> Wrap de curry e feijão italiano </h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="prod-price"> R$15.99</h4>
+          </div>
+          <i class="fas fa-shopping-cart add-cart"></i>
+        </div>
+
+      </div>
+    </div>
+    <!-- </div> -->
+  </section>
+  <section class="collapsible-menu">
+    <input type="checkbox" id="menu-trigger3">
+    <label for="menu-trigger3">Sanduíches</label>
+    <!-- <div class="menu-content"> -->
+    <div class="menu-content" id="product1" class="section-p1">
+      <div class="pro-container">
+        <div class="pro">
+          <img class="prod-img" src=" img/products/food3.jpg" alt="product-img">
+          <div class="des">
+            <span>VEGETARIANO</span>
+            <h5 class="product-title"> Sanduíche aberto c/ patê de espinafre </h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="prod-price"> R$9.90</h4>
+          </div>
+          <i class="fas fa-shopping-cart add-cart"></i>
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+  </section>
+  <section class="collapsible-menu">
+    <input type="checkbox" id="menu-trigger4">
+    <label for="menu-trigger4">Sobremesas</label>
+    <!-- <div class="menu-content"> -->
+    <div class="menu-content" id="product1" class="section-p1">
+      <div class="pro-container">
+        <div class="pro">
+          <img class="prod-img" src=" img/products/food4.jpg" alt="product-img">
+          <div class="des">
+            <span>VEGANO</span>
+            <h5 class="product-title"> Sorvete natural de frutas vermelhas </h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="old-price">R$12,90</p>
+            <h4 class="prod-price"> R$9.90</h4>
+          </div>
+          <i class="fas fa-shopping-cart add-cart"></i>
+        </div>
+        <div class="pro">
+          <img class="prod-img" src=" img/products/bolo-de-murango.jpg" alt="product-img">
+          <div class="des">
+            <span>VEGANO</span>
+            <h5 class="product-title"> Bolo de murango </h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="old-price">R$1299,99</p>
+            <h4 class="prod-price"> R$999.99</h4>
+          </div>
+          <i class="fas fa-shopping-cart add-cart"></i>
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+  </section>
+  <section class="collapsible-menu">
+    <input type="checkbox" id="menu-trigger5">
+    <label for="menu-trigger5">Bebidas</label>
+    <!-- <div class="menu-content"> -->
+    <div class="menu-content" id="product1" class="section-p1">
+      <div class="pro-container">
+        <div class="pro">
+          <img class="prod-img" src=" img/products/water.jpg" alt="product-img">
+          <div class="des">
+            <span>VEGANO</span>
+            <h5 class="product-title"> Água geladinha </h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="prod-price"> R$1.00</h4>
+          </div>
+          <i class="fas fa-shopping-cart add-cart"></i>
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+  </section>
+
+  <section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+      <h4>Fique por dentro das promoções</h4>
+      <p>Receba nossas novidades e <span>ofertas especiais</span> por email. </p>
+    </div>
+    <div class="form">
+      <input type="email" placeholder="Insira seu email">
+      <button class="normal">Enviar</button>
+    </div>
+  </section>
+
+  <footer class="section-p1">
+    <div class="follow">
+      <h4>Nos siga nas redes sociais</h4>
+      <div class="icon">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-pinterest-p"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2022, VEGGIA - Todos os direitos reservados</p>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
